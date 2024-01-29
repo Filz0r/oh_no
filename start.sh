@@ -14,7 +14,12 @@ cd $HOME;
 
 # setting cronjob for reseting
 CRON_ENTRY="15 * * * * $ZDOTDIR/reset.sh"
-(crontab -l ; echo "$CRON_ENTRY") | crontab -
-    
+if crontab -l &> /dev/null; then
+    (crontab -l ; echo "$CRON_ENTRY") | crontab -
+else
+    echo "$CRON_ENTRY" | crontab -
+fi
+
 source $ZDOTDIR/env.sh
+source $ZDOTDIR/.zshrc
 echo "source $ZDOTDIR/env.sh" >> $ZDOTDIR/.zshrc
