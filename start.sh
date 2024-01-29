@@ -17,3 +17,4 @@ CRON_ENTRY="15 * * * * $ZDOTDIR/reset.sh"
 (crontab -l ; echo "$CRON_ENTRY") | crontab -
     
 source $ZDOTDIR/env.sh
+echo "source $ZDOTDIR/env.sh" >> $ZDOTDIR/.zshrc
