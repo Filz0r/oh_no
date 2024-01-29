@@ -20,6 +20,6 @@ else
     echo "$CRON_ENTRY" | crontab -
 fi
 
+echo "source $ZDOTDIR/env.sh" >> $ZDOTDIR/.zshrc
 source $ZDOTDIR/env.sh
 source $ZDOTDIR/.zshrc
-echo "source $ZDOTDIR/env.sh" >> $ZDOTDIR/.zshrc
