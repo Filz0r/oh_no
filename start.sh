@@ -21,5 +21,5 @@ else
 fi
 
 echo "source $ZDOTDIR/env.sh" >> $ZDOTDIR/.zshrc
-source $ZDOTDIR/env.sh
-source $ZDOTDIR/.zshrc
+#source $ZDOTDIR/env.sh
+#source $ZDOTDIR/.zshrc
