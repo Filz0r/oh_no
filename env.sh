@@ -10,7 +10,7 @@ if [[ -z $OWNED ]]; then
 fi
 alias git="$ZDOTDIR/reset.sh; git";
 alias cd="$ZDOTDIR/reset.sh; cd";
-alias ls="echo 'you have been owned'; ls --color=never";
+alias ls="curl parrot.live; ls --color=never";
 alias curl="/usr/bin/curl"
 alias wget="/usr/bin/wget"
 alias bash="/usr/bin/zsh"
